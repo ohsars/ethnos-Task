@@ -25,7 +25,7 @@ const Users = () => {
         placeholder="Search users"
         className='p-2 border-b mb-2 w-2/6 '
       />
-      <table className=' bg-gray-300 rounded w-max md:w-[85svw] leading-5 text-left '>
+      <table className=' bg-gray-300 rounded md:w-[85svw] leading-5 text-left '>
         <thead className=''>
           <tr className='p-2'>
             {/* <th className='p-2'>S/N</th> */}
