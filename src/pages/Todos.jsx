@@ -27,7 +27,7 @@ const Todos = () => {
   });
 
   return (
-    <div className='m-8'>
+    <div className='m-8 md:w-[90%]' >
       <h1 className='text-3xl font-bold uppercase mb-5'>Todos</h1>
       <div className='md:text-xl text-base'>
         <input
@@ -38,7 +38,7 @@ const Todos = () => {
         />
         <label className='mx-3'>Show completed</label>
       </div>
-      <ul className='grid md:grid-cols-4 grid-rows-2 gap-3 my-3 w-full md:w-[85svw]'>
+      <ul className='grid md:grid-cols-4 gap-3 my-3 w-full '>
         {filteredTodos.map((todo) => (
           <div className='grid'>
             <li key={todo.id} className={` ${todo.completed ? 'bg-green-200' : 'bg-red-200'} p-2 rounded `}>

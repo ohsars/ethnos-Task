@@ -16,7 +16,7 @@ const Users = () => {
   });
 
   return (
-    <div className='m-8 w-[70%]'>
+    <div className='m-8 md:w-[90%]'>
     <h2 className='text-3xl font-bold uppercase mb-5'>Users</h2>
       <input
         type="search"
@@ -25,7 +25,7 @@ const Users = () => {
         placeholder="Search users"
         className='p-2 border-b mb-2 w-2/6 '
       />
-      <table className=' bg-gray-100 shadow-lg rounded md:w-[70vw] leading-5 text-left '>
+      <table className=' bg-gray-100 shadow-lg rounded leading-5 text-left w-full'>
         <thead className=''>
           <tr className='p-2'>
             {/* <th className='p-2'>S/N</th> */}
