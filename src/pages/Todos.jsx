@@ -27,20 +27,20 @@ const Todos = () => {
   });
 
   return (
-    <div className='m-8 mx-auto p-2 md:w-[80%]' >
-      <h1 className='text-3xl font-bold uppercase mb-5'>Todos</h1>
-      <div className='md:text-xl text-base'>
+    <div className='mt-8 mx-[9%] md:mx-auto md:w-[90%]' >
+      <h1 className='text-3xl font-bold uppercase mb-5 mx-auto'>Todos</h1>
+      <div className='md:text-xl text-base md:mx-auto'>
         <input
           type="checkbox"
           checked={completed}
           onChange={() => setCompleted(!completed)}
           className='text-7xl'
         />
-        <label className='mx-3'>Show completed</label>
+        <label className=''>Show completed</label>
       </div>
-      <ul className='grid gap-3 my-3 mx-auto '>
+      <ul className='grid gap-3 md:grid-cols-3 my-3 '>
         {filteredTodos.map((todo) => (
-          <div className='grid'>
+          <div className='grid  md:mx-auto '>
             <li key={todo.id} className={` ${todo.completed ? 'bg-green-200' : 'bg-red-200'} p-2 rounded `}>
               <input
               type="checkbox"

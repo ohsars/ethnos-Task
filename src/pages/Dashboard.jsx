@@ -9,14 +9,14 @@ import Albums from './Albums'
 export const Dashboard = () => {
   return (
     <>
-      <div className='flex h-full'>
+      <div className='md:flex mx-auto '>
         <Sidebar />
         <div className=''>
           <Navbar />
           <Users />
-          {/* <Todos />
-          <Posts />
-          <Albums /> */}
+          <Todos />
+          {/* <Posts /> */}
+          {/* <Albums /> */}
         </div>
         
       </div>
