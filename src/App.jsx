@@ -6,6 +6,7 @@ import Users from './pages/Users'
 import Posts from './pages/Posts'
 import Todos from './pages/Todos'
 import Albums from './pages/Albums'
+import Settings from './pages/Settings'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path='/posts' element={<Posts />}></Route>
       <Route path='todos' element={<Todos />}></Route>
       <Route path='/albums' element={<Albums />}></Route>
+      <Route path='/settings' element={<Settings />}></Route>
       {/* <Dashboard /> */}
     </Routes>
   )

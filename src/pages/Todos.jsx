@@ -31,7 +31,7 @@ const Todos = () => {
   return (
     <div className='flex gap-2 justify-around '>
       <Sidebar />
-      <div className='mx-8'>
+      <div className='mx-8 md:flex-1'>
         <Navbar />
         <div>
           <h1 className='text-3xl font-bold uppercase mb-5'>Todos</h1>
