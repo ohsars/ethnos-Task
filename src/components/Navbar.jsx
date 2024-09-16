@@ -11,7 +11,7 @@ export const Navbar = () => {
         <div className='flex justify-between'>
           <Greeting />
           <nav>
-            <ul className='flex md:hidden gap-1' >
+            <ul className='md:hidden' >
             {links.map((link, index) => (
               <li key={index} className='capitalize hover:font-bold p-3 '><Link to={`/${link}`}>{link}</Link></li>
             ))}
