@@ -1,23 +1,16 @@
 import React from 'react'
 import { Sidebar } from '../components/Sidebar'
+import { Greeting } from '../components/Greeting'
 import { Navbar } from '../components/Navbar'
-import Users from './Users'
-import Todos from './Todos'
-import Posts from './Posts'
-import Albums from './Albums'
 
 export const Dashboard = () => {
   return (
-    <>
+    <div className='flex gap-2 justify-around '>
       <Sidebar />
-      <div>
-        {/* <Navbar /> */}
-        {/* <Users /> */}
-        {/* <Todos /> */}
-        {/* <Posts /> */}
-        {/* <Albums /> */}
+      <div className='flex-1'>
+        <Navbar />
       </div>
       
-    </>
+    </div>
   )
 }
