@@ -14,9 +14,9 @@ export const Dashboard = () => {
         <div className=''>
           <Navbar />
           <Users />
-          <Todos />
+          {/* <Todos />
           <Posts />
-          <Albums />
+          <Albums /> */}
         </div>
         
       </div>
