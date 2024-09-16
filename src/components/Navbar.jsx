@@ -6,14 +6,14 @@ export const Navbar = () => {
   
   const links = ['users', 'posts', 'todos', 'albums', 'settings']
   return (
-    <nav>
+    <nav className='mb-4 mx-auto'>
       <div className=' md:mt-2 sticky top-0'>
-        <div className='flex justify-between'>
+        <div className=''>
           <Greeting />
-          <nav>
-            <ul className='md:hidden' >
+          <nav className='bg-orange-100'>
+            <ul className='md:hidden grid grid-cols-5 -px-1' >
             {links.map((link, index) => (
-              <li key={index} className='capitalize hover:font-bold p-3 '><Link to={`/${link}`}>{link}</Link></li>
+              <li key={index} className='capitalize text-sm hover:font-bold p-2 '><Link to={`/${link}`}>{link}</Link></li>
             ))}
             </ul>
         </nav>
