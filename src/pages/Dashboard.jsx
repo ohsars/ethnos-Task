@@ -9,17 +9,15 @@ import Albums from './Albums'
 export const Dashboard = () => {
   return (
     <>
-      <div className='md:flex mx-auto '>
-        <Sidebar />
-        <div className=''>
-          <Navbar />
-          <Users />
-          <Todos />
-          {/* <Posts /> */}
-          {/* <Albums /> */}
-        </div>
-        
+      <Sidebar />
+      <div>
+        {/* <Navbar /> */}
+        {/* <Users /> */}
+        {/* <Todos /> */}
+        {/* <Posts /> */}
+        {/* <Albums /> */}
       </div>
+      
     </>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getPosts } from '../utils/api';
+import { Sidebar } from '../components/Sidebar';
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -26,8 +27,9 @@ const Posts = () => {
   const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
 
   return (
-    <div className='mx-8 mt-4 md:h-[90vh] relative'>
-      
+    <div className='flex gap-2 justify-around '>
+    <Sidebar />
+    <div className='mx-8 mt-4'>
 
       <div className='flex justify-between '>
         <h1 className='text-3xl font-bold uppercase mb-5'>Posts</h1>
@@ -56,6 +58,7 @@ const Posts = () => {
           <button key={pageNumber} onClick={() => paginate(pageNumber + 1)} className={`${totalPages.length <= -1 & 'bg-red-200' } px-2 rounded cursor-pointer text-gray-700 md:text-2xl`} >◉</button>
         ))}
       </div>
+    </div>
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getUsers } from '../utils/api';
+import { Sidebar } from '../components/Sidebar';
+import { Navbar } from '../components/Navbar';
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -16,16 +18,19 @@ const Users = () => {
   });
 
   return (
-    <div className='mx-auto '>
-    <h2 className='text-3xl font-bold uppercase mb-5 m-8'>Users</h2>
-      <input
+    <div className='flex gap-2 justify-between '>
+    <Sidebar />
+    <div className='mx-8 md:flex-1'>
+    <Navbar />
+      <h2 className='text-3xl font-bold uppercase mb-5'>Users</h2>
+        <input
         type="search"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         placeholder="Search users"
-        className='p-2 border-b mb-2 mx-6 w-2/6 '
+        className=' mb-4 md:w-2/6 p-2 border-b-2 rounded  outline-none '
       />
-      <table className=' bg-gray-100 shadow-lg rounded leading-5 text-left w-min mx-[3%] md:w-[90%] overflow-hidden'>
+      <table className=' bg-gray-100 shadow-lg rounded leading-5 text-left w-min md:w-[90%] overflow-hidden'>
         <thead className=''>
           <tr>
             {/* <th className='p-2'>S/N</th> */}
@@ -47,6 +52,7 @@ const Users = () => {
           ))}
         </tbody>
       </table>
+    </div>
     </div>
   );
 };
